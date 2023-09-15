@@ -17,6 +17,7 @@
 		B26AA2142AB492C3009435A3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2132AB492C3009435A3 /* AppView.swift */; };
 		B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2222AB49C57009435A3 /* AppRouterTests.swift */; };
 		B26AA2252AB49D18009435A3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2242AB49D18009435A3 /* RegistrationViewModel.swift */; };
+		B26AA2272AB49FDF009435A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B26AA2262AB49FDF009435A3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B26AA2192AB49C3C009435A3 /* RegistrationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistrationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26AA2222AB49C57009435A3 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		B26AA2242AB49D18009435A3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		B26AA2262AB49FDF009435A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B26AA1FF2AB48EC7009435A3 /* Assets.xcassets */,
 				B26AA2012AB48EC7009435A3 /* RegistrationApp.entitlements */,
 				B26AA2022AB48EC7009435A3 /* Preview Content */,
+				B26AA2262AB49FDF009435A3 /* README.md */,
 			);
 			path = RegistrationApp;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26AA2272AB49FDF009435A3 /* README.md in Resources */,
 				B26AA2042AB48EC7009435A3 /* Preview Assets.xcassets in Resources */,
 				B26AA2002AB48EC7009435A3 /* Assets.xcassets in Resources */,
 			);
