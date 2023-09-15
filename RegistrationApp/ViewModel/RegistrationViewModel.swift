@@ -15,4 +15,10 @@ class RegistrationViewModel: ObservableObject {
     @Published var isNameValid = true
     @Published var isEmailValid = true
     @Published var isDateOfBirthValid = true
+    
+    var formattedDate: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        return dateFormatter.string(from: dateOfBirth)
+    }
 }
