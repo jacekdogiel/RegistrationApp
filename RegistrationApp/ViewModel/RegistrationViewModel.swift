@@ -22,11 +22,11 @@ class RegistrationViewModel: ObservableObject {
     }
     
     var minimumDate: Date {
-        return calendar.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
+        return calendar.date(from: Constants.minimumDate) ?? Date()
     }
     
     var maximumDate: Date {
-        return calendar.date(from: DateComponents(year: 2019, month: 12, day: 31)) ?? Date()
+        return calendar.date(from: Constants.maximumDate) ?? Date()
     }
     
     lazy var dateOfBirth: Date = {
@@ -46,8 +46,14 @@ class RegistrationViewModel: ObservableObject {
     }
     
     private func isValidEmail(_ email: String) -> Bool {
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailRegex = Constants.emailRegex
         let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         return emailPredicate.evaluate(with: email)
+    }
+    
+    struct Constants {
+        static let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        static let minimumDate = DateComponents(year: 1900, month: 1, day: 1)
+        static let maximumDate = DateComponents(year: 2019, month: 12, day: 31)
     }
 }

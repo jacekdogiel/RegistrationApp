@@ -15,7 +15,18 @@
 		B26AA20F2AB4916F009435A3 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */; };
 		B26AA2122AB49227009435A3 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2112AB49227009435A3 /* AppRouter.swift */; };
 		B26AA2142AB492C3009435A3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2132AB492C3009435A3 /* AppView.swift */; };
+		B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2222AB49C57009435A3 /* AppRouterTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B26AA21D2AB49C3C009435A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26AA1F02AB48EC7009435A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26AA1F72AB48EC7009435A3;
+			remoteInfo = RegistrationApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B26AA1F82AB48EC7009435A3 /* RegistrationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegistrationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,19 @@
 		B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
 		B26AA2112AB49227009435A3 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B26AA2132AB492C3009435A3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		B26AA2192AB49C3C009435A3 /* RegistrationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistrationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26AA2222AB49C57009435A3 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B26AA1F52AB48EC7009435A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26AA2162AB49C3C009435A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				B26AA1FA2AB48EC7009435A3 /* RegistrationApp */,
+				B26AA21A2AB49C3C009435A3 /* RegistrationAppTests */,
 				B26AA1F92AB48EC7009435A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				B26AA1F82AB48EC7009435A3 /* RegistrationApp.app */,
+				B26AA2192AB49C3C009435A3 /* RegistrationAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +127,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		B26AA21A2AB49C3C009435A3 /* RegistrationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B26AA2222AB49C57009435A3 /* AppRouterTests.swift */,
+			);
+			path = RegistrationAppTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +155,24 @@
 			productReference = B26AA1F82AB48EC7009435A3 /* RegistrationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B26AA2182AB49C3C009435A3 /* RegistrationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26AA21F2AB49C3C009435A3 /* Build configuration list for PBXNativeTarget "RegistrationAppTests" */;
+			buildPhases = (
+				B26AA2152AB49C3C009435A3 /* Sources */,
+				B26AA2162AB49C3C009435A3 /* Frameworks */,
+				B26AA2172AB49C3C009435A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26AA21E2AB49C3C009435A3 /* PBXTargetDependency */,
+			);
+			name = RegistrationAppTests;
+			productName = RegistrationAppTests;
+			productReference = B26AA2192AB49C3C009435A3 /* RegistrationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -137,6 +185,11 @@
 				TargetAttributes = {
 					B26AA1F72AB48EC7009435A3 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					B26AA2182AB49C3C009435A3 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
+						TestTargetID = B26AA1F72AB48EC7009435A3;
 					};
 				};
 			};
@@ -154,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				B26AA1F72AB48EC7009435A3 /* RegistrationApp */,
+				B26AA2182AB49C3C009435A3 /* RegistrationAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -165,6 +219,13 @@
 			files = (
 				B26AA2042AB48EC7009435A3 /* Preview Assets.xcassets in Resources */,
 				B26AA2002AB48EC7009435A3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26AA2172AB49C3C009435A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +245,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B26AA2152AB49C3C009435A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B26AA21E2AB49C3C009435A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26AA1F72AB48EC7009435A3 /* RegistrationApp */;
+			targetProxy = B26AA21D2AB49C3C009435A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B26AA2052AB48EC7009435A3 /* Debug */ = {
@@ -368,6 +445,58 @@
 			};
 			name = Release;
 		};
+		B26AA2202AB49C3C009435A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacek.dogiel.RegistrationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegistrationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RegistrationApp";
+			};
+			name = Debug;
+		};
+		B26AA2212AB49C3C009435A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacek.dogiel.RegistrationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegistrationApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RegistrationApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +514,15 @@
 			buildConfigurations = (
 				B26AA2082AB48EC7009435A3 /* Debug */,
 				B26AA2092AB48EC7009435A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26AA21F2AB49C3C009435A3 /* Build configuration list for PBXNativeTarget "RegistrationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26AA2202AB49C3C009435A3 /* Debug */,
+				B26AA2212AB49C3C009435A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
