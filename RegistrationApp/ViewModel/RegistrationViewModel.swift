@@ -10,7 +10,6 @@ import SwiftUI
 class RegistrationViewModel: ObservableObject {
     @Published var name = ""
     @Published var email = ""
-    @Published var dateOfBirth = Date()
     
     @Published var isNameValid = true
     @Published var isEmailValid = true
@@ -20,5 +19,35 @@ class RegistrationViewModel: ObservableObject {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         return dateFormatter.string(from: dateOfBirth)
+    }
+    
+    var minimumDate: Date {
+        return calendar.date(from: DateComponents(year: 1900, month: 1, day: 1)) ?? Date()
+    }
+    
+    var maximumDate: Date {
+        return calendar.date(from: DateComponents(year: 2019, month: 12, day: 31)) ?? Date()
+    }
+    
+    lazy var dateOfBirth: Date = {
+        return maximumDate
+    }()
+    
+    let calendar = Calendar.current
+    
+    func isFormValid() -> Bool {
+        isNameValid = !name.trimmingCharacters(in: .whitespaces).isEmpty
+        isEmailValid = isValidEmail(email)
+        
+        if isNameValid && isEmailValid {
+            return true
+        }
+        return false
+    }
+    
+    private func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
     }
 }

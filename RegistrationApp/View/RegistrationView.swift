@@ -34,19 +34,19 @@ struct RegistrationView: View {
                     }
                 }
                 
-                VStack(alignment: .leading) {
-                    DatePicker("Date of Birth", selection: $viewModel.dateOfBirth, in: ...Date(), displayedComponents: .date)
-                    
-                    if !viewModel.isDateOfBirthValid {
-                        Text("Must be a valid date between Jan 1, 1900 and December 31, 2019")
-                            .foregroundColor(.red)
-                    }
-                }
+                DatePicker(
+                    "Date of Birth",
+                    selection: $viewModel.dateOfBirth,
+                    in: viewModel.minimumDate...viewModel.maximumDate,
+                    displayedComponents: .date
+                )
             }
             
             Section {
                 Button("Register") {
-                    router.navigate(to: .confirmation)
+                    if viewModel.isFormValid() {
+                        router.navigate(to: .confirmation)
+                    }
                 }
             }
         }
