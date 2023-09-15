@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegistrationView: View {
     @ObservedObject var viewModel: RegistrationViewModel
+    @ObservedObject var router: AppRouter
     
     var body: some View {
         Form {
@@ -45,7 +46,7 @@ struct RegistrationView: View {
             
             Section {
                 Button("Register") {
-                    //
+                    router.navigate(to: .confirmation)
                 }
             }
         }
@@ -54,6 +55,9 @@ struct RegistrationView: View {
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
-        RegistrationView(viewModel: RegistrationViewModel())
+        RegistrationView(
+            viewModel: RegistrationViewModel(),
+            router: AppRouter()
+        )
     }
 }

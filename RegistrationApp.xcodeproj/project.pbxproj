@@ -13,6 +13,8 @@
 		B26AA2042AB48EC7009435A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26AA2032AB48EC7009435A3 /* Preview Assets.xcassets */; };
 		B26AA20D2AB4908C009435A3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA20C2AB4908C009435A3 /* RegistrationViewModel.swift */; };
 		B26AA20F2AB4916F009435A3 /* ConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */; };
+		B26AA2122AB49227009435A3 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2112AB49227009435A3 /* AppRouter.swift */; };
+		B26AA2142AB492C3009435A3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2132AB492C3009435A3 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B26AA2032AB48EC7009435A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B26AA20C2AB4908C009435A3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationView.swift; sourceTree = "<group>"; };
+		B26AA2112AB49227009435A3 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		B26AA2132AB492C3009435A3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		B26AA1FA2AB48EC7009435A3 /* RegistrationApp */ = {
 			isa = PBXGroup;
 			children = (
+				B26AA2102AB491F6009435A3 /* Router */,
 				B26AA20B2AB49078009435A3 /* ViewModel */,
 				B26AA20A2AB48F47009435A3 /* View */,
 				B26AA1FB2AB48EC7009435A3 /* RegistrationApp.swift */,
@@ -78,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				B26AA1FD2AB48EC7009435A3 /* RegistrationView.swift */,
+				B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */,
+				B26AA2132AB492C3009435A3 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -86,9 +93,16 @@
 			isa = PBXGroup;
 			children = (
 				B26AA20C2AB4908C009435A3 /* RegistrationViewModel.swift */,
-				B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B26AA2102AB491F6009435A3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B26AA2112AB49227009435A3 /* AppRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,7 +177,9 @@
 			files = (
 				B26AA1FE2AB48EC7009435A3 /* RegistrationView.swift in Sources */,
 				B26AA20F2AB4916F009435A3 /* ConfirmationView.swift in Sources */,
+				B26AA2142AB492C3009435A3 /* AppView.swift in Sources */,
 				B26AA20D2AB4908C009435A3 /* RegistrationViewModel.swift in Sources */,
+				B26AA2122AB49227009435A3 /* AppRouter.swift in Sources */,
 				B26AA1FC2AB48EC7009435A3 /* RegistrationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
