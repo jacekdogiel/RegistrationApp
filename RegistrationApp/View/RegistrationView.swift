@@ -13,29 +13,29 @@ struct RegistrationView: View {
     
     var body: some View {
         Form {
-            Section(header: Text("Registration Form")) {
+            Section(header: Text("registration_register_form_title")) {
                 VStack(alignment: .leading) {
-                    TextField("Name", text: $viewModel.name)
+                    TextField("registration_name", text: $viewModel.name)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     if !viewModel.isNameValid {
-                        Text("Name is required")
+                        Text("registration_name_required")
                             .foregroundColor(.red)
                     }
                 }
                 
                 VStack(alignment: .leading) {
-                    TextField("Email", text: $viewModel.email)
+                    TextField("registration_email", text: $viewModel.email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .autocapitalization(.none)
                     
                     if !viewModel.isEmailValid {
-                        Text("Invalid email")
+                        Text("registration_email_invalid")
                             .foregroundColor(.red)
                     }
                 }
                 
                 DatePicker(
-                    "Date of Birth",
+                    "registration_date_of_birth",
                     selection: $viewModel.dateOfBirth,
                     in: viewModel.dateRange,
                     displayedComponents: .date
@@ -43,7 +43,7 @@ struct RegistrationView: View {
             }
             
             Section {
-                Button("Register") {
+                Button("registration_register_button_title") {
                     if viewModel.isFormValid() {
                         router.navigate(to: .confirmation)
                     }

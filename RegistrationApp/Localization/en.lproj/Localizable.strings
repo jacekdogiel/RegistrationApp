@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  RegistrationApp
+
+  Created by Jacek Dogiel on 16/09/2023.
+  
+*/
+
+// Confirmation view
+"confirmation_name" = "Name: ";
+"confirmation_email" = "Email: ";
+"confirmation_date_of_birth" = "Date of Birth: ";
+"confirmation_thank_register" = "Thank you for registering";
+
+// Registartion view
+"registration_name" = "Name";
+"registration_name_required" = "Name is required";
+"registration_email" = "Email";
+"registration_email_invalid" = "Invalid email";
+"registration_date_of_birth" = "Date of Birth";
+"registration_register_button_title" = "Register";
+"registration_register_form_title" = "Registration Form";

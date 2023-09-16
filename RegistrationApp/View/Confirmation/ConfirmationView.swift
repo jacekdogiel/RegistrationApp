@@ -11,14 +11,15 @@ struct ConfirmationView: View {
     let viewModel: ConfirmationViewModel
     
     var body: some View {
-        VStack {
-            Text("Thank you for registering")
+        VStack(alignment: .leading) {
+            Text("confirmation_thank_register")
                 .font(.title)
                 .padding()
             
-            Text("Name: \(viewModel.name)")
-            Text("Email: \(viewModel.email)")
-            Text("Date of Birth: \(viewModel.formattedDate)")
+            Text(NSLocalizedString("confirmation_name", comment: "") + viewModel.name)
+            Text(NSLocalizedString("confirmation_email", comment: "") + viewModel.email)
+            Text(NSLocalizedString("confirmation_date_of_birth", comment: "") + viewModel.formattedDate)
+            Spacer()
         }
     }
 }
