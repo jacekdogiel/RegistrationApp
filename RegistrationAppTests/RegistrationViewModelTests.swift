@@ -64,5 +64,10 @@ final class RegistrationViewModelTests: XCTestCase {
     func testMaximumDate() {
         XCTAssertEqual(viewModel.maximumDate, Calendar.current.date(from: DateComponents(year: 2019, month: 12, day: 31))!)
     }
+    
+    func testDateRange() {
+        let expectedDateRange = viewModel.minimumDate...viewModel.maximumDate
+        XCTAssertEqual(viewModel.dateRange, expectedDateRange)
+    }
 }
 

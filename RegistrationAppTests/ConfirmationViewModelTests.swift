@@ -8,7 +8,7 @@
 import XCTest
 @testable import RegistrationApp
 
-class ConfirmationViewModelTests: XCTestCase {
+final class ConfirmationViewModelTests: XCTestCase {
 
     func testFormattedDate() {
         let dateFormatter = DateFormatter()

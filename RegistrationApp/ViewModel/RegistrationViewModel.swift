@@ -23,6 +23,10 @@ final class RegistrationViewModel: ObservableObject {
         return calendar.date(from: Constants.maximumDate) ?? Date()
     }
     
+    var dateRange: ClosedRange<Date> {
+        return minimumDate...maximumDate
+    }
+    
     lazy var dateOfBirth: Date = {
         return maximumDate
     }()

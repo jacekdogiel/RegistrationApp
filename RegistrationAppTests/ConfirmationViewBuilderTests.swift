@@ -8,7 +8,7 @@
 import XCTest
 @testable import RegistrationApp
 
-class ConfirmationViewBuilderTests: XCTestCase {
+final class ConfirmationViewBuilderTests: XCTestCase {
 
     func testBuildConfirmationView() {
         let registrationViewModel = RegistrationViewModel()

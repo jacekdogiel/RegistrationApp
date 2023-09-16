@@ -37,7 +37,7 @@ struct RegistrationView: View {
                 DatePicker(
                     "Date of Birth",
                     selection: $viewModel.dateOfBirth,
-                    in: viewModel.minimumDate...viewModel.maximumDate,
+                    in: viewModel.dateRange,
                     displayedComponents: .date
                 )
             }
