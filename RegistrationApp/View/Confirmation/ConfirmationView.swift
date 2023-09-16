@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ConfirmationView: View {
-    @ObservedObject var viewModel: RegistrationViewModel
+    let viewModel: ConfirmationViewModel
     
     var body: some View {
         VStack {
@@ -25,6 +25,10 @@ struct ConfirmationView: View {
 
 struct ConfirmationView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmationView(viewModel: RegistrationViewModel())
+        ConfirmationView(viewModel: ConfirmationViewModel(
+            name: "John",
+            email: "john@doe.com",
+            dateOfBirth: Date())
+        )
     }
 }

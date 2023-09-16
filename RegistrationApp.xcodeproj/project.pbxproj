@@ -16,8 +16,10 @@
 		B26AA2122AB49227009435A3 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2112AB49227009435A3 /* AppRouter.swift */; };
 		B26AA2142AB492C3009435A3 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2132AB492C3009435A3 /* AppView.swift */; };
 		B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2222AB49C57009435A3 /* AppRouterTests.swift */; };
-		B26AA2252AB49D18009435A3 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2242AB49D18009435A3 /* RegistrationViewModel.swift */; };
+		B26AA2252AB49D18009435A3 /* RegistrationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2242AB49D18009435A3 /* RegistrationViewModelTests.swift */; };
 		B26AA2272AB49FDF009435A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B26AA2262AB49FDF009435A3 /* README.md */; };
+		B26AA2292AB59AA3009435A3 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2282AB59AA3009435A3 /* ConfirmationViewModel.swift */; };
+		B26AA22C2AB5A17B009435A3 /* ConfirmationViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA22B2AB5A17B009435A3 /* ConfirmationViewBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +45,10 @@
 		B26AA2132AB492C3009435A3 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B26AA2192AB49C3C009435A3 /* RegistrationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegistrationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26AA2222AB49C57009435A3 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
-		B26AA2242AB49D18009435A3 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		B26AA2242AB49D18009435A3 /* RegistrationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModelTests.swift; sourceTree = "<group>"; };
 		B26AA2262AB49FDF009435A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B26AA2282AB59AA3009435A3 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
+		B26AA22B2AB5A17B009435A3 /* ConfirmationViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +113,8 @@
 		B26AA20A2AB48F47009435A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B26AA22A2AB5A163009435A3 /* Confirmation */,
 				B26AA1FD2AB48EC7009435A3 /* RegistrationView.swift */,
-				B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */,
-				B26AA2132AB492C3009435A3 /* AppView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				B26AA20C2AB4908C009435A3 /* RegistrationViewModel.swift */,
+				B26AA2282AB59AA3009435A3 /* ConfirmationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -128,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				B26AA2112AB49227009435A3 /* AppRouter.swift */,
+				B26AA2132AB492C3009435A3 /* AppView.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -136,9 +141,18 @@
 			isa = PBXGroup;
 			children = (
 				B26AA2222AB49C57009435A3 /* AppRouterTests.swift */,
-				B26AA2242AB49D18009435A3 /* RegistrationViewModel.swift */,
+				B26AA2242AB49D18009435A3 /* RegistrationViewModelTests.swift */,
 			);
 			path = RegistrationAppTests;
+			sourceTree = "<group>";
+		};
+		B26AA22A2AB5A163009435A3 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				B26AA20E2AB4916F009435A3 /* ConfirmationView.swift */,
+				B26AA22B2AB5A17B009435A3 /* ConfirmationViewBuilder.swift */,
+			);
+			path = Confirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +258,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26AA1FE2AB48EC7009435A3 /* RegistrationView.swift in Sources */,
+				B26AA2292AB59AA3009435A3 /* ConfirmationViewModel.swift in Sources */,
 				B26AA20F2AB4916F009435A3 /* ConfirmationView.swift in Sources */,
+				B26AA22C2AB5A17B009435A3 /* ConfirmationViewBuilder.swift in Sources */,
 				B26AA2142AB492C3009435A3 /* AppView.swift in Sources */,
 				B26AA20D2AB4908C009435A3 /* RegistrationViewModel.swift in Sources */,
 				B26AA2122AB49227009435A3 /* AppRouter.swift in Sources */,
@@ -257,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */,
-				B26AA2252AB49D18009435A3 /* RegistrationViewModel.swift in Sources */,
+				B26AA2252AB49D18009435A3 /* RegistrationViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

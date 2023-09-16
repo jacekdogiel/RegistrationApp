@@ -8,7 +8,7 @@
 import XCTest
 @testable import RegistrationApp
 
-class AppRouterTests: XCTestCase {
+final class AppRouterTests: XCTestCase {
 
     func testNavigateToRegistration() {
         let router = AppRouter()

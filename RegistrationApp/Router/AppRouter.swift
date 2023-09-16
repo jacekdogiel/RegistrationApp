@@ -6,10 +6,12 @@
 //
 import SwiftUI
 
-class AppRouter: ObservableObject {
+final class AppRouter: ObservableObject {
     @Published var currentView: AppView = .registration
     
     func navigate(to view: AppView) {
-        currentView = view
+        withAnimation(.easeInOut(duration: 0.5)) {
+            currentView = view
+        }
     }
 }
