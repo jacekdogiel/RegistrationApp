@@ -10,7 +10,7 @@ The app follows the Model-View-ViewModel (MVVM) architectural pattern, separatin
 
 - **View**: SwiftUI views such as `RegistrationView` and `ConfirmationView` responsible for rendering the user interface.
 - **ViewModel**: `RegistrationViewModel` manages the application's data and business logic. It communicates with the view to provide data and handle user interactions.
-- **Model**: There is no separate model layer in this app. Data is managed within the `RegistrationViewModel`.
+- **Model**: There is no separate model layer in this app. Data is managed within the `RegistrationViewModel` and `ConfirmationViewModel`.
 
 ## Key Classes
 
@@ -20,11 +20,16 @@ The app follows the Model-View-ViewModel (MVVM) architectural pattern, separatin
 - Uses the `ObservableObject` protocol to publish changes to the current view.
 - Allows navigation between the registration and confirmation views.
 
+### ConfirmationViewModel
+
+- Contains properties for name, email, date of birth.
+- Provides computed property for formatting date.
+
 ### RegistrationViewModel
 
 - Manages user input and validation for the registration process.
 - Contains properties for name, email, date of birth, and validation flags.
-- Provides computed properties for formatting date and defining date ranges.
+- Provides computed properties defining date ranges.
 - Implements validation logic for name and email.
 - Provides a method to check the validity of the registration form.
 
@@ -38,7 +43,11 @@ The app follows the Model-View-ViewModel (MVVM) architectural pattern, separatin
 ### ConfirmationView
 
 - SwiftUI view that confirms user registration.
-- Displays user information retrieved from the `RegistrationViewModel`.
+- Displays user information retrieved from the `ConfirmationViewModel`.
+
+### ConfirmationViewBuilder
+
+- Struct that provides a method to build a `ConfirmationView` from a `RegistrationViewModel`.
 
 ### AppView
 
@@ -50,9 +59,11 @@ The app's functionality is thoroughly tested using XCTest, Apple's unit testing 
 
 - **AppRouterTests**: Tests the navigation functionality of the `AppRouter` class, ensuring it correctly updates the current view state.
 
-- **RegistrationViewModelTests**: Tests the business logic of the `RegistrationViewModel` class, covering input validation and date formatting.
+- **ConfirmationViewModelTests**: Tests the business logic of the `ConfirmationViewModel` class, covering date formatting.
 
-- **Integration Tests**: While not included here, integration tests can be added to test the interaction between views and view models. This can be done using SwiftUI's `ViewBuilder` and `ViewModifier` for view testing.
+- **RegistrationViewModelTests**: Tests the business logic of the `RegistrationViewModel` class, covering input validation and date range.
+
+- **ConfirmationViewBuilderTests**: Tests the `ConfirmationViewBuilder` struct, verifying that it correctly builds a `ConfirmationView` based on a `RegistrationViewModel`.
 
 ## Contact
 
