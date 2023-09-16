@@ -20,6 +20,7 @@
 		B26AA2272AB49FDF009435A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B26AA2262AB49FDF009435A3 /* README.md */; };
 		B26AA2292AB59AA3009435A3 /* ConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA2282AB59AA3009435A3 /* ConfirmationViewModel.swift */; };
 		B26AA22C2AB5A17B009435A3 /* ConfirmationViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA22B2AB5A17B009435A3 /* ConfirmationViewBuilder.swift */; };
+		B26AA22E2AB5A3F8009435A3 /* ConfirmationViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26AA22D2AB5A3F8009435A3 /* ConfirmationViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B26AA2262AB49FDF009435A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B26AA2282AB59AA3009435A3 /* ConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModel.swift; sourceTree = "<group>"; };
 		B26AA22B2AB5A17B009435A3 /* ConfirmationViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewBuilder.swift; sourceTree = "<group>"; };
+		B26AA22D2AB5A3F8009435A3 /* ConfirmationViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				B26AA2222AB49C57009435A3 /* AppRouterTests.swift */,
 				B26AA2242AB49D18009435A3 /* RegistrationViewModelTests.swift */,
+				B26AA22D2AB5A3F8009435A3 /* ConfirmationViewModelTests.swift */,
 			);
 			path = RegistrationAppTests;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				B26AA2232AB49C57009435A3 /* AppRouterTests.swift in Sources */,
 				B26AA2252AB49D18009435A3 /* RegistrationViewModelTests.swift in Sources */,
+				B26AA22E2AB5A3F8009435A3 /* ConfirmationViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

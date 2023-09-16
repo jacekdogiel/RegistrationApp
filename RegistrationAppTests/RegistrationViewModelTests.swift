@@ -56,12 +56,6 @@ final class RegistrationViewModelTests: XCTestCase {
         
         XCTAssertFalse(viewModel.isFormValid())
     }
-    #warning("move to confirmation vm testing class")
-//    func testFormattedDate() {
-//        viewModel.dateOfBirth = Calendar.current.date(from: DateComponents(year: 1990, month: 5, day: 15))!
-//
-//        XCTAssertEqual(viewModel.formattedDate, "5/15/90")
-//    }
     
     func testMinimumDate() {
         XCTAssertEqual(viewModel.minimumDate, Calendar.current.date(from: DateComponents(year: 1900, month: 1, day: 1))!)
