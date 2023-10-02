@@ -7,6 +7,7 @@
 */
 
 // Confirmation view
+"confirmation_back" = "back";
 "confirmation_name" = "Name: ";
 "confirmation_email" = "Email: ";
 "confirmation_date_of_birth" = "Date of Birth: ";

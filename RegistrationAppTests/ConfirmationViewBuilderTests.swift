@@ -21,7 +21,7 @@ final class ConfirmationViewBuilderTests: XCTestCase {
         let testDate = dateFormatter.date(from: "2000-12-31")!
         registrationViewModel.dateOfBirth = testDate
 
-        let confirmationView = ConfirmationViewBuilder.build(registrationViewModel: registrationViewModel)
+        let confirmationView = ConfirmationViewBuilder.build(registrationViewModel: registrationViewModel, router: AppRouter())
 
         let viewModel = confirmationView.viewModel
 

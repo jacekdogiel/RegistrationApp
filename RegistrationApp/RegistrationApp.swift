@@ -18,7 +18,7 @@ struct RegistrationApp: App {
             case .registration:
                 RegistrationView(viewModel: viewModel, router: router)
             case .confirmation:
-                ConfirmationViewBuilder.build(registrationViewModel: viewModel)
+                ConfirmationViewBuilder.build(registrationViewModel: viewModel, router: router)
             }
         }
     }
