@@ -11,7 +11,7 @@ final class AppRouter: ObservableObject {
     private var navigationStack: [AppView] = []
 
     func navigate(to view: AppView) {
-        withAnimation(.easeInOut(duration: 0.5)) {
+        withAnimation(.easeInOut(duration: 0.3)) {
             navigationStack.append(currentView)
             currentView = view
         }
@@ -19,7 +19,7 @@ final class AppRouter: ObservableObject {
 
     func navigateBack() {
         guard let previousView = navigationStack.popLast() else { return }
-        withAnimation(.easeInOut(duration: 0.5)) {
+        withAnimation(.easeInOut(duration: 0.3)) {
             currentView = previousView
         }
     }
